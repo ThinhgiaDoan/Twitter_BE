@@ -1,5 +1,5 @@
 import express from 'express'
-import { body, validationResult, ValidationChain } from 'express-validator'
+import { ValidationChain, validationResult } from 'express-validator'
 import { RunnableValidationChains } from 'express-validator/src/middlewares/schema'
 
 export const validate = (validation: RunnableValidationChains<ValidationChain>) => {
